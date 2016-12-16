@@ -109,6 +109,14 @@ static inline void wait_until(unsigned char time) {
 
 unsigned int mushrooms[]={5,6,9 , 15, 23, 44, 56, 60, 61, 75, 95, 200 ,250,0};
 unsigned int* mushpos=&mushrooms[0];
+
+
+unsigned int bugs[]={4,10,11,12,13,14,40,55,0};
+unsigned int* bugpos=&bugs[0];
+
+
+unsigned char field=0;
+
 unsigned int scrpos=0;
 
 unsigned char mushpxp[]={
@@ -122,6 +130,19 @@ unsigned char mushpxp[]={
 	0b10000000
 };
 
+
+unsigned char bugpxp[]={
+	0b10010100,
+	0b10111100,
+	0b11111110,
+	0b11111110,
+	0b11111110,
+	0b11111110,
+	0b10111100,
+	0b10010100
+};
+  
+  
 ISR (TIM1_COMPA_vect ) {
 	unsigned char i;
 	unsigned int scrposo;
@@ -166,53 +187,107 @@ ISR (TIM1_COMPA_vect ) {
 	if (line == 262 +3 ) { /* we are on the 263nd line. 262 because 1st line is 0.  Then +3 because vsync lines are double speed*/
 			line=0;   //next up is vsync
 			mushpos=&mushrooms[0];
+			bugpos=&bugs[0];
+			field^=1;
 			return;
 	}
 	
 	
-	if ((line>63)&&(line <230))
+	if ((line>64)&&(line <230))
 	{
 		/*Active video lines */	
 		
 		scrposo=scrpos; //in case we need to reset
-		mushposo = mushpos; //in case we need to reset
 		
-		sprite = mushpxp[ line&7];
+		if (field){
+				
+			//this frame is mushrooms
+		
+			mushposo = mushpos; //in case we need to reset
+		
+			sprite = mushpxp[ line&7];
 		 
-		for (i=0;i<10;i++) {
+			for (i=0;i<10;i++) {
 			
-	//		NTSC_PIN = NTSC_LUM;
-		//	NTSC_PIN = NTSC_LUM;
+		//		NTSC_PIN = NTSC_LUM;
+			//	NTSC_PIN = NTSC_LUM;
 			
-			scrpos++;
+				scrpos++;
 			
 			
-			if (scrpos==*mushpos) {
-				shifter=sprite;
-				NTSC_PORT=shifter;
-				shifter=shifter>>1;
-				NTSC_PORT=shifter;
-				shifter=shifter>>1;
-				NTSC_PORT=shifter;
-				shifter=shifter>>1;
-				NTSC_PORT=shifter;
-				shifter=shifter>>1;
-				NTSC_PORT=shifter;
-				shifter=shifter>>1;
-				NTSC_PORT=shifter;
-				NTSC_PORT=NTSC_BLACK;
-				///this last pixel is being stuck on
-				mushpos++;
+				if (scrpos==*mushpos) {
+					shifter=sprite;
+					NTSC_PORT=shifter;
+					shifter=shifter>>1;
+					NTSC_PORT=shifter;
+					shifter=shifter>>1;
+					NTSC_PORT=shifter;
+					shifter=shifter>>1;
+					NTSC_PORT=shifter;
+					shifter=shifter>>1;
+					NTSC_PORT=shifter;
+					shifter=shifter>>1;
+					NTSC_PORT=shifter;
+					NTSC_PORT=NTSC_BLACK;
+					///this last pixel is being stuck on
+					mushpos++;
+				}
+			
+			}
+		
+		//	NTSC_PORT &=~NTSC_LUM;  //lum down
+		
+			if (line & 7) { //all but the 7th line of a sprite, reset this
+				scrpos=scrposo;
+				mushpos=mushposo;
+			}
+	
+		} else {
+			
+			//bugs
+			//this frame is bugs
+						
+			mushposo = bugpos; //in case we need to reset
+			
+			sprite = bugpxp[ line&7];
+			
+			for (i=0;i<10;i++) {
+				
+				//		NTSC_PIN = NTSC_LUM;
+				//	NTSC_PIN = NTSC_LUM;
+				
+				scrpos++;
+				
+				
+				if (scrpos==*bugpos) {
+					shifter=sprite;
+					NTSC_PORT=shifter;
+					shifter=shifter>>1;
+					NTSC_PORT=shifter;
+					shifter=shifter>>1;
+					NTSC_PORT=shifter;
+					shifter=shifter>>1;
+					NTSC_PORT=shifter;
+					shifter=shifter>>1;
+					NTSC_PORT=shifter;
+					shifter=shifter>>1;
+					NTSC_PORT=shifter;
+					NTSC_PORT=NTSC_BLACK;
+					///this last pixel is being stuck on
+					bugpos++;
+				}
+				
+			}
+			
+			//NTSC_PORT &=~NTSC_LUM;  //lum down
+			
+			if ((line & 7)!=7) { //all but the 7th line of a sprite, reset this
+				scrpos=scrposo;
+				bugpos=mushposo;
 			}
 			
 		}
-		
-		NTSC_PORT &=~NTSC_LUM;  //lum down
-		
-		if (line & 7) { //all but the 7th line of a sprite, reset this
-			scrpos=scrposo;
-			mushpos=mushposo;
-		}
+	
 	
 	}
 	
@@ -251,7 +326,16 @@ void main(void)
 
 	while(1){
 
-		PORTB=0;
+		bugs[7]++;
+		_delay_ms(10);
+		_delay_ms(10);
+		_delay_ms(10);
+		_delay_ms(10);
+		_delay_ms(10);
+		_delay_ms(10);
+		_delay_ms(10);
+		_delay_ms(10);
+		_delay_ms(10);
 	}
 
 }
