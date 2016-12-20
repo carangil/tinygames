@@ -108,11 +108,13 @@ static inline void wait_until(unsigned char time) {
 #define SCRROWS 20
 
 unsigned int mushrooms[]={5,6,9 , 15, 23, 44, 56, 60, 61, 75, 95, 200 ,250,0};
-unsigned int* mushpos=&mushrooms[0];
+//unsigned int* mushpos=&mushrooms[0];
 
 
 unsigned int bugs[]={4,10,11,12,13,14,40,55,0};
-unsigned int* bugpos=&bugs[0];
+//unsigned int* bugpos=&bugs[0];
+
+unsigned int* drawpos=&mushrooms[0];
 
 
 unsigned char field=0;
@@ -148,7 +150,7 @@ ISR (TIM1_COMPA_vect ) {
 	unsigned int scrposo;
 	volatile unsigned char sprite;
 	signed char shifter;
-	unsigned int* mushposo;
+	unsigned int* drawposold;
 	
 	// simplified vsync:  only do the vertical serrations
 	// The 'equalization pulses' will be taken care of as regular sync
@@ -186,9 +188,13 @@ ISR (TIM1_COMPA_vect ) {
 
 	if (line == 262 +3 ) { /* we are on the 263nd line. 262 because 1st line is 0.  Then +3 because vsync lines are double speed*/
 			line=0;   //next up is vsync
-			mushpos=&mushrooms[0];
-			bugpos=&bugs[0];
-			field^=1;
+			field^=1; //switch fields
+			
+			if (field)
+				drawpos=&mushrooms[0];
+			else
+				drawpos=&bugs[0];
+			
 			return;
 	}
 	
@@ -199,94 +205,57 @@ ISR (TIM1_COMPA_vect ) {
 		
 		scrposo=scrpos; //in case we need to reset
 		
+		drawposold = drawpos; //in case we need to reset
+		
+		
 		if (field){
 				
 			//this frame is mushrooms
-		
-			mushposo = mushpos; //in case we need to reset
-		
 			sprite = mushpxp[ line&7];
+		}else
+		{
+			//this field is for bugs
+			sprite = bugpxp[ line&7];	
+		}
+		
+		
+		
 		 
-			for (i=0;i<10;i++) {
-			
-		//		NTSC_PIN = NTSC_LUM;
-			//	NTSC_PIN = NTSC_LUM;
-			
-				scrpos++;
+		for (i=0;i<10;i++) {
 			
 			
-				if (scrpos==*mushpos) {
-					shifter=sprite;
-					NTSC_PORT=shifter;
-					shifter=shifter>>1;
-					NTSC_PORT=shifter;
-					shifter=shifter>>1;
-					NTSC_PORT=shifter;
-					shifter=shifter>>1;
-					NTSC_PORT=shifter;
-					shifter=shifter>>1;
-					NTSC_PORT=shifter;
-					shifter=shifter>>1;
-					NTSC_PORT=shifter;
-					NTSC_PORT=NTSC_BLACK;
-					///this last pixel is being stuck on
-					mushpos++;
-				}
+			scrpos++;
 			
-			}
-		
-		//	NTSC_PORT &=~NTSC_LUM;  //lum down
-		
-			if (line & 7) { //all but the 7th line of a sprite, reset this
-				scrpos=scrposo;
-				mushpos=mushposo;
-			}
-	
-		} else {
 			
-			//bugs
-			//this frame is bugs
-						
-			mushposo = bugpos; //in case we need to reset
-			
-			sprite = bugpxp[ line&7];
-			
-			for (i=0;i<10;i++) {
-				
-				//		NTSC_PIN = NTSC_LUM;
-				//	NTSC_PIN = NTSC_LUM;
-				
-				scrpos++;
-				
-				
-				if (scrpos==*bugpos) {
-					shifter=sprite;
-					NTSC_PORT=shifter;
-					shifter=shifter>>1;
-					NTSC_PORT=shifter;
-					shifter=shifter>>1;
-					NTSC_PORT=shifter;
-					shifter=shifter>>1;
-					NTSC_PORT=shifter;
-					shifter=shifter>>1;
-					NTSC_PORT=shifter;
-					shifter=shifter>>1;
-					NTSC_PORT=shifter;
-					NTSC_PORT=NTSC_BLACK;
-					///this last pixel is being stuck on
-					bugpos++;
-				}
-				
-			}
-			
-			//NTSC_PORT &=~NTSC_LUM;  //lum down
-			
-			if ((line & 7)!=7) { //all but the 7th line of a sprite, reset this
-				scrpos=scrposo;
-				bugpos=mushposo;
+			if (scrpos==*drawpos) {
+				shifter=sprite;
+				NTSC_PORT=shifter;
+				shifter=shifter>>1;
+				NTSC_PORT=shifter;
+				shifter=shifter>>1;
+				NTSC_PORT=shifter;
+				shifter=shifter>>1;
+				NTSC_PORT=shifter;
+				shifter=shifter>>1;
+				NTSC_PORT=shifter;
+				shifter=shifter>>1;
+				NTSC_PORT=shifter;
+				NTSC_PORT=NTSC_BLACK;
+				///this last pixel is being stuck on
+				drawpos++;
 			}
 			
 		}
+		
+		
+		
+		if (line & 7) { //all but the 7th line of a sprite, reset this
+			scrpos=scrposo;
+			drawpos=drawposold;
+		}
+	
+			
+	
 	
 	
 	}
@@ -327,15 +296,10 @@ void main(void)
 	while(1){
 
 		bugs[7]++;
+		
+		
 		_delay_ms(10);
-		_delay_ms(10);
-		_delay_ms(10);
-		_delay_ms(10);
-		_delay_ms(10);
-		_delay_ms(10);
-		_delay_ms(10);
-		_delay_ms(10);
-		_delay_ms(10);
+		
 	}
 
 }
