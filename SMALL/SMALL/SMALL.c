@@ -104,22 +104,25 @@ static inline void wait_until(unsigned char time) {
 #define HSYNCSTART 120
 
 
-#define SCRCOLS 18 
-#define SCRROWS 20
+#define SCRCOLS 10		/*number of items in a row */
+#define ROWSTRIDE 16    /*how far to number rows apart: should be a power of two*/
+#define ROWDIRMASK 0b10000  /* which bit in the position flips every row:  this determines the direction a bug will travel */
 
-unsigned int mushrooms[]={5,6,9 , 15, 23, 44, 56, 60, 61, 75, 95, 200 ,250,0};
+#define ENDOFLINE	255
+
+unsigned char mushrooms[]={15,16,19 , 20, 23, 44, 56, 60, 61, 75, 95, 200 ,250,ENDOFLINE};
 //unsigned int* mushpos=&mushrooms[0];
 
 
-unsigned int bugs[]={4,10,11,12,13,14,40,55,0};
+unsigned char bugs[]={1,2,3,4,5,6,7,8,9,10,11,12,13,14,21,22,23,ENDOFLINE};
 //unsigned int* bugpos=&bugs[0];
 
-unsigned int* drawpos=&mushrooms[0];
+unsigned char* drawpos=&mushrooms[0];
 
 
 unsigned char field=0;
 
-unsigned int scrpos=0;
+unsigned char scrpos=0;
 
 unsigned char mushpxp[]={
 	0b10000000,
@@ -144,11 +147,12 @@ unsigned char bugpxp[]={
 	0b10010100
 };
   
-  
+volatile unsigned char sprite;
+
 ISR (TIM1_COMPA_vect ) {
 	unsigned char i;
-	unsigned int scrposo;
-	volatile unsigned char sprite;
+	unsigned char scrposo;
+
 	signed char shifter;
 	unsigned int* drawposold;
 	
@@ -159,7 +163,6 @@ ISR (TIM1_COMPA_vect ) {
 	// Then later, I find the Atarti 2600 Stella chip manual, which tells us that using only vertical serrations for vsync works on 'all kinds of tvs'.
 	
 
-		
 	if (line >=6 && line <12 ) {
 		OCR1A = HALF_LINE_CLOCKS;  /* vsync lines are 1/2 length*/
 		
@@ -190,14 +193,17 @@ ISR (TIM1_COMPA_vect ) {
 			line=0;   //next up is vsync
 			field^=1; //switch fields
 			
-			if (field)
+			if (field){
+				sprite = mushpxp[ line&7];
 				drawpos=&mushrooms[0];
-			else
+			}
+			else{
+				sprite = bugpxp[ line&7];	
 				drawpos=&bugs[0];
+			}
 			
 			return;
 	}
-	
 	
 	if ((line>64)&&(line <230))
 	{
@@ -206,27 +212,19 @@ ISR (TIM1_COMPA_vect ) {
 		scrposo=scrpos; //in case we need to reset
 		
 		drawposold = drawpos; //in case we need to reset
-		
-		
+				 
 		if (field){
-				
-			//this frame is mushrooms
 			sprite = mushpxp[ line&7];
-		}else
-		{
-			//this field is for bugs
-			sprite = bugpxp[ line&7];	
+		}
+		else{
+			sprite = bugpxp[ line&7];
 		}
 		
-		
-		
-		 
-		for (i=0;i<10;i++) {
+				 
+		for (i=0;i<SCRCOLS;i++) {
 			
 			
 			scrpos++;
-			
-			
 			if (scrpos==*drawpos) {
 				shifter=sprite;
 				NTSC_PORT=shifter;
@@ -247,20 +245,12 @@ ISR (TIM1_COMPA_vect ) {
 			
 		}
 		
-		
-		
 		if (line & 7) { //all but the 7th line of a sprite, reset this
 			scrpos=scrposo;
 			drawpos=drawposold;
 		}
 	
-			
-	
-	
-	
 	}
-	
-	
 	
 	line++;
 
@@ -272,6 +262,9 @@ void main(void)
 {
 	unsigned int i;
 	int j;
+
+	unsigned char c;
+	unsigned char d;
 
 /*	
 	DDRA=0b11000000;  //OCR0A pin output
@@ -294,12 +287,64 @@ void main(void)
 	ntsc_init();
 
 	while(1){
-
-		bugs[7]++;
+#if 1
+		unsigned char* bugp = bugs;
+		unsigned char* mushp = mushrooms;
+		
+		while(1){
+			
+			
+			if ((*bugp)==ENDOFLINE)
+				break;
+				
+			if ((*mushp)==ENDOFLINE)
+				break;
+			
+			if (*bugp == *mushp) {
+				(*bugp)+=SCRCOLS;  //jump over it
+				bugp++;
+				mushp++;
+				continue;
+			}
+			
+			
+		
+			
+			
+			if (*bugp > *mushp)
+				mushp++;
+			else {
+				bugp++;
+			}
+			
+			
+		}
 		
 		
-		_delay_ms(10);
+		for (bugp=bugs;(*bugp)!=ENDOFLINE;bugp++){
+			
+				
+				
+				(*bugp)++; //advance bug
+			
+				
+				//if a bug pair is out of order, swap them
+				//this is bubble sort.  every frame this will run ONCE 
+				//if the sort order is violated, it should correct quickly
+				if ((*bugp) > *(bugp+1)) {
+					i = *bugp;
+					*bugp = *(bugp+1);
+					*(bugp+1) = i;	
+				}
+							
+				
+				
+		}
 		
+		for (i=0;i<20;i++)
+			_delay_ms(10);
+		
+	#endif		
 	}
 
 }
