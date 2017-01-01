@@ -108,9 +108,10 @@ static inline void wait_until(unsigned char time) {
 #define ROWDIRMASK 0b10000  /* which bit in the position flips every row:  this determines the direction a bug will travel */
 
 #define ENDOFLINE	255
-#define INVALID	254
+#define INVALID 254
+#define ERASED	253
 
-unsigned char mushrooms[]={10,15,20,ENDOFLINE,ENDOFLINE,ENDOFLINE,ENDOFLINE,ENDOFLINE,ENDOFLINE};
+unsigned char mushrooms[]={10,15,20,30,50,60,ENDOFLINE,ENDOFLINE,ENDOFLINE,ENDOFLINE,ENDOFLINE,ENDOFLINE};
 //unsigned int* mushpos=&mushrooms[0];
 
 
@@ -288,17 +289,16 @@ ISR (TIM1_COMPA_vect ) {
 	
 	}
 	
-	if (line >230) {
+	if (line >240) {
 		
 		
 		for (i=0;i< playerx;i++) {  //delay
 			NTSC_PORT=NTSC_BLACK;
 		}
 		
+		for (i=0;i<4;i++)
+			NTSC_PORT|=NTSC_WHITE;
 		
-		NTSC_PORT|=NTSC_WHITE;
-		NTSC_PORT|=NTSC_WHITE;
-
 		NTSC_PORT=NTSC_BLACK;
 		
 		
@@ -316,12 +316,14 @@ void main(void)
 {
 	unsigned int i;
 	int j;
-
+	unsigned char t;
 	unsigned char c;
 	unsigned char d;
 	unsigned char* bugp;
 	unsigned char* mushp;
 	unsigned char bulletpos; 
+	unsigned char abug=0;
+	unsigned char tick=0;
 	
 
 /*	
@@ -346,169 +348,194 @@ void main(void)
 
 	while(1){
 
+
 		bugp = bugs;
 		mushp = mushrooms;
+				
+		_delay_ms(10);
+		tick = (tick +1) & 0xF;  //tick counter 0 to 15
 		
 		
+		//advance the player
+		playerx+=1;
+		if (playerx>36)
+			playerx=0;
+			
+		//advance the bullet
+
+		bulletpos = INVALID;
 	
 		
+		if (bullety<=64) {
+			//refire bullet at player pos	
+			
+			//add read-port for firebutton here
+			bulletx=playerx;   
+			bullety=240;  
+			
+		} else {
+			bullety-=2;  // very important we never interrupt ODD scanlines (every 7th line updates the sprite counters, and drawing the bullet suppresses a row of pixels)
+			bulletpos = (bullety - 64) / 8 * SCRCOLS + (bulletx/4); //turn bullet x/y into approximate screen position number
+		}
 		
-		for (bugp=bugs;(*bugp)!=ENDOFLINE;bugp++){
+				
+				
+	
+		for (bugp=bugs; *bugp != ENDOFLINE; bugp++) {
 			
 		
+			if (tick==0) {
+				//we are on an update tick
 				
-				//bug direction is based on row	
+					
 				if ((*bugp/SCRCOLS)&1)
-					j=-1; 
+					j=-1;  //backward on odd rows
 				else
-					j=1;
-					
-					
+					j=1;  //otherwise forwards
 				
+				
+				//if going forward, backwards and bump into left of screen
 				if ((*bugp % SCRCOLS) ==0 &&  j==-1)
 					*bugp += SCRCOLS;
-							
+				
+				//if going backward and bump into right of screen
+				else if ((*bugp % SCRCOLS) ==(SCRCOLS-1) &&  j==1)
+					*bugp += SCRCOLS;
+
+				//just go forward
+				else
+					(*bugp)+=j;
+								
+			}
+		
+		
+			//scan thru all mushrooms
+			for (mushp=mushrooms;*mushp!=ENDOFLINE;mushp++) {
+				
+				if (tick==0) {
+					//if on updatetick jump down when bug hits mushroom
+					if (*mushp == *bugp)
+						(*bugp)+=SCRCOLS;
+					
+				}
+				
+				
+				if (bulletpos == *mushp) {	
+					bullety=0;
+					*mushp = ERASED; //erase a mushroom if touched by bullet
+				}
+				
+				//swap if we find out of order
+				
+				if ( *(mushp) > *(mushp+1) ) {
+					t=*mushp;
+					*mushp=*(mushp+1);
+					*(mushp+1) = t;
+				}
+				
+			}
+			
+			
+			//check if bug shot
+				if (bulletpos == *bugp) {
+					bullety=0;
+					*(mushp++)= *bugp;
+					*(mushp++)= ENDOFLINE;
+					*bugp = ERASED; //erase a bug if touched by bullet
+										
+				}
+				
+				//swap if we find out of order
+				
+				if ( *(bugp) > *(bugp+1) ) {
+					t=*bugp;
+					*bugp=*(bugp+1);
+					*(bugp+1) = t;
+				}
+			
+			
+		}
+		
+		
+		
+		
+			
+		#if 0	
+			
+				
+		//Scan thru all mushrooms and bugs in 1 pass
+		while(1){
+			
+			abug=1;	//assume we are advancing the bug pointer
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			//done when we processed all mushrooms and bugs
+			if ( ((*bugp)==ENDOFLINE) && ((*mushp) == ENDOFLINE))
+				break;
+			
+			
+			//only evauluate forwards bug motion if we advanced the bug pointer (so we don't double-advance some bugs)
+			if (tick == 0 && abug) {
+				//on zero we move the bugs forward
+												
+				//bug direction is based on row
+				if ((*bugp/SCRCOLS)&1)
+					j=-1;
+				else
+					j=1;
+												
+				if ((*bugp % SCRCOLS) ==0 &&  j==-1)
+					*bugp += SCRCOLS;
+				
 				else if ((*bugp % SCRCOLS) ==(SCRCOLS-1) &&  j==1)
 					*bugp += SCRCOLS;
 
 				else (*bugp)+=j;
 				
-		#if 0	
-				//if a bug pair is out of order, swap them
-				//this is bubble sort.  every frame this will run ONCE 
-				//if the sort order is violated, it should correct quickly
-				if ((*bugp) > *(bugp+1)) {
-					i = *bugp;
-					*bugp = *(bugp+1);
-					*(bugp+1) = i;	
-				}
+				
+			}
+			
+			
+									
+			if (*bugp == *mushp) {
+		//		if (tick ==0)
+			//		(*bugp)+=SCRCOLS;  //jump over it
+				
+				//advance both pointers.
+				bugp++;
+				mushp++;
+				continue;
+			}
+			
+			
+			/* advance whichever pointer is behind */
+			
+			if ((*bugp) > (*mushp)) {
+				mushp++;
+				abug=0;  //we did not advance the bugptr
+			}
+			else {
+				bugp++;
+			}
+			
+			
+		} //end mush/bug loop
 		#endif
-					
-		}
-		
-		bugp = bugs;
-		mushp = mushrooms;
-		
-		//check mushroom-bug interactions
-		while(1){
-				
-				
-				if ( ((*bugp)==ENDOFLINE) && ((*mushp) == ENDOFLINE))
-					break;
-				
-								
-				if (*bugp == *mushp) {
-					(*bugp)+=SCRCOLS;  //jump over it
-					
-					//advance both pointers.
-					bugp++;
-					mushp++;
-					continue;
-				}
-				
-				
-				/* advance whichever pointer is behind */
-				
-				if ((*bugp) > (*mushp))
-					mushp++;
-				else 
-					bugp++;
-				
-								
-			}
 		
 		
-		
-		
-		for (i=0;i<15;i++) {
-			
-			_delay_ms(10);
-		
-			playerx++;
-		
-			if (playerx==36)
-				playerx=0;
-		
-			bullety-=2;
-			if (bullety<=64) {
-				bullety=220;
-				bulletx=playerx;
-			}
-			
-			{
-			
-			
-			
-				bulletpos = (bullety - 64) / 8 * SCRCOLS + (bulletx/4);		
-				mushp = mushrooms;
-				
-				while (*mushp !=ENDOFLINE) {
-				
-				
+	}// end main looop
 
-				
-					//mushroom bubble sort
-
-					if ((*mushp) > *(mushp+1)) {
-						i = *mushp;
-						*mushp = *(mushp+1);
-						*(mushp+1) = i;
-					}
-				
-				
-					
-				
-					//scan mushrooms for bullet interactions				
-				
-				
-					if (*mushp == bulletpos) {
-						*mushp = (ENDOFLINE-1);
-						bullety=64; //end bullet 
-						bulletpos = ENDOFLINE;
-					}
-				
-					mushp++;	
-				}
-			
-			
-		
-				//buglist
-				bugp = bugs;
-				while (*bugp !=ENDOFLINE) {
-				
-				
-
-		
-					//bug bubble sort
-
-					if ((*bugp) > *(bugp+1)) {
-						i = *bugp;
-						*bugp = *(bugp+1);
-						*(bugp+1) = i;
-					}
-				
-				
-		
-				
-					//scan bugs for bullet interactions
-				
-				
-					if (*bugp == bulletpos) {
-						*bugp = (ENDOFLINE-1);  //kill bug
-						*(mushp++) = bulletpos; //create mushroom at end of list
-						*(mushp++) = ENDOFLINE; //end the mushroom list
-						bullety=64; //end bullet
-					}
-				
-					bugp++;
-				}
-			
-			}
-
-			
-			
-		}
-		
-	}
-
-}
+} //end main
+ 
