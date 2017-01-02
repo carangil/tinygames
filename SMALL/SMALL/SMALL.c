@@ -111,11 +111,13 @@ static inline void wait_until(unsigned char time) {
 #define INVALID 254
 #define ERASED	253
 
-unsigned char mushrooms[]={10,15,20,30,50,60,ENDOFLINE,ENDOFLINE,ENDOFLINE,ENDOFLINE,ENDOFLINE,ENDOFLINE};
+unsigned char mushrooms[]={20,46,77,ERASED,ERASED,ERASED,ENDOFLINE};
 //unsigned int* mushpos=&mushrooms[0];
 
 
-unsigned char bugs[]={1,ENDOFLINE,ENDOFLINE,ENDOFLINE,ENDOFLINE};
+unsigned char bugs[]={0,1,2,3,4,5,ENDOFLINE,ENDOFLINE,ENDOFLINE,ENDOFLINE};
+	
+	
 	//,2,3,4,5,6,7,8,9,10,11,12,13,14,21,22,23,ENDOFLINE};
 //unsigned int* bugpos=&bugs[0];
 
@@ -221,11 +223,11 @@ ISR (TIM1_COMPA_vect ) {
 			field^=1; //switch fields
 			
 			if (field){
-				sprite = mushpxp[ line&7];
+		//		sprite = mushpxp[ line&7];
 				drawpos=&mushrooms[0];
 			}
 			else{
-				sprite = bugpxp[ line&7];	
+			//	sprite = bugpxp[ line&7];	
 				drawpos=&bugs[0];
 			}
 			
@@ -310,21 +312,42 @@ ISR (TIM1_COMPA_vect ) {
 
 }
 
-
+/*
+void check(unsigned char* bugp) 
+{
+	//enforce ordering, and delete duplicates
+	
+	unsigned char t;
+	if ( *(bugp) >= *(bugp+1) ) {
+		if (*(bugp) == *(bugp+1))
+			t=ERASED;
+		else
+			t=*bugp;
+		
+		
+		*bugp=*(bugp+1);
+		*(bugp+1) = t;
+	}
+	
+	
+}
+*/
 
 void main(void)
 {
 	unsigned int i;
 	int j;
 	unsigned char t;
-	unsigned char c;
-	unsigned char d;
+
 	unsigned char* bugp;
 	unsigned char* mushp;
+	unsigned char* nmushp;
 	unsigned char bulletpos; 
 	unsigned char abug=0;
 	unsigned char tick=0;
-	
+	unsigned char insmush;
+	volatile unsigned char* bx = &bulletx;
+	volatile unsigned char* by = &bullety;
 
 /*	
 	DDRA=0b11000000;  //OCR0A pin output
@@ -352,12 +375,23 @@ void main(void)
 		bugp = bugs;
 		mushp = mushrooms;
 				
-		_delay_ms(10);
+	//	_delay_ms(10);
+//__asm__ __volatile__ ( "nop");
+	for (i=55000;i;i++) {
+	   __asm__ __volatile__ ( "nop");
+	}
+	//	__asm__ __volatile__ ( "nop");
+		
 		tick = (tick +1) & 0xF;  //tick counter 0 to 15
+	//	tick++;  //rolls over 
 		
-		
+	
 		//advance the player
-		playerx+=1;
+		
+		*((volatile char*)(&playerx)) += 1;  //force update to interrupt handler
+		
+	//	playerx++;
+		
 		if (playerx>36)
 			playerx=0;
 			
@@ -378,9 +412,35 @@ void main(void)
 			bulletpos = (bullety - 64) / 8 * SCRCOLS + (bulletx/4); //turn bullet x/y into approximate screen position number
 		}
 		
+		*bx=bulletx;
+		*by=bullety;
 				
 				
+//enforce bug sort:
+					
+	/*		
+	resort:
 	
+		for (bugp=bugs;*bugp!=ENDOFLINE;bugp++) {
+						
+			if (   (*bugp)  >= (*(bugp+1))  ) {
+			
+				t=*bugp;
+				
+				if ( (*bugp)  == (*(bugp+1)))
+					t=INVALID;
+								
+				*bugp=*(bugp+1);
+				*(bugp+1) = t;
+				
+				goto resort;
+			}
+			
+			
+		}
+	*/
+	
+	resort:
 		for (bugp=bugs; *bugp != ENDOFLINE; bugp++) {
 			
 		
@@ -388,25 +448,44 @@ void main(void)
 				//we are on an update tick
 				
 					
-				if ((*bugp/SCRCOLS)&1)
-					j=-1;  //backward on odd rows
-				else
-					j=1;  //otherwise forwards
-				
-				
-				//if going forward, backwards and bump into left of screen
-				if ((*bugp % SCRCOLS) ==0 &&  j==-1)
-					*bugp += SCRCOLS;
-				
-				//if going backward and bump into right of screen
-				else if ((*bugp % SCRCOLS) ==(SCRCOLS-1) &&  j==1)
-					*bugp += SCRCOLS;
-
-				//just go forward
-				else
-					(*bugp)+=j;
+				if ((*bugp/SCRCOLS)&1) {     //bug moves left
+					if ((*bugp % SCRCOLS) ==0)
+						*bugp += (SCRCOLS+1);
+					 
+					(*bugp)--;  //backward on odd rows
+				}
+				else  { //bug moves right
+					
+					if ((*bugp % SCRCOLS) ==(SCRCOLS-1))
+						*bugp += (SCRCOLS-1);
+					
+					(*bugp)++;
+					
+				}
 								
+				
+								
+			} else {
+				
+				if (   (*bugp)  >= (*(bugp+1))  ) {
+					
+					t=*bugp;
+					
+					if ( (*bugp)  == (*(bugp+1)))
+					t=INVALID;
+					
+					*bugp=*(bugp+1);
+					*(bugp+1) = t;
+					
+					goto resort;
+				}
+				
+				
 			}
+		
+		
+		
+		
 		
 		
 			//scan thru all mushrooms
@@ -426,6 +505,12 @@ void main(void)
 				}
 				
 				//swap if we find out of order
+				//check(mushp);
+				
+				if (*mushp==ERASED){
+					*mushp=insmush;
+					insmush = ERASED;
+				}
 				
 				if ( *(mushp) > *(mushp+1) ) {
 					t=*mushp;
@@ -433,25 +518,21 @@ void main(void)
 					*(mushp+1) = t;
 				}
 				
+				
 			}
 			
-			
+#if 1			
 			//check if bug shot
 				if (bulletpos == *bugp) {
 					bullety=0;
-					*(mushp++)= *bugp;
-					*(mushp++)= ENDOFLINE;
+					insmush = *bugp;  //set mushroom insert
+				//	*(mushp++)= *bugp;
+				//	*(mushp)= ENDOFLINE;
 					*bugp = ERASED; //erase a bug if touched by bullet
 										
 				}
+	#endif
 				
-				//swap if we find out of order
-				
-				if ( *(bugp) > *(bugp+1) ) {
-					t=*bugp;
-					*bugp=*(bugp+1);
-					*(bugp+1) = t;
-				}
 			
 			
 		}
@@ -460,79 +541,7 @@ void main(void)
 		
 		
 			
-		#if 0	
-			
-				
-		//Scan thru all mushrooms and bugs in 1 pass
-		while(1){
-			
-			abug=1;	//assume we are advancing the bug pointer
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			//done when we processed all mushrooms and bugs
-			if ( ((*bugp)==ENDOFLINE) && ((*mushp) == ENDOFLINE))
-				break;
-			
-			
-			//only evauluate forwards bug motion if we advanced the bug pointer (so we don't double-advance some bugs)
-			if (tick == 0 && abug) {
-				//on zero we move the bugs forward
-												
-				//bug direction is based on row
-				if ((*bugp/SCRCOLS)&1)
-					j=-1;
-				else
-					j=1;
-												
-				if ((*bugp % SCRCOLS) ==0 &&  j==-1)
-					*bugp += SCRCOLS;
-				
-				else if ((*bugp % SCRCOLS) ==(SCRCOLS-1) &&  j==1)
-					*bugp += SCRCOLS;
-
-				else (*bugp)+=j;
-				
-				
-			}
-			
-			
-									
-			if (*bugp == *mushp) {
-		//		if (tick ==0)
-			//		(*bugp)+=SCRCOLS;  //jump over it
-				
-				//advance both pointers.
-				bugp++;
-				mushp++;
-				continue;
-			}
-			
-			
-			/* advance whichever pointer is behind */
-			
-			if ((*bugp) > (*mushp)) {
-				mushp++;
-				abug=0;  //we did not advance the bugptr
-			}
-			else {
-				bugp++;
-			}
-			
-			
-		} //end mush/bug loop
-		#endif
+	
 		
 		
 	}// end main looop
