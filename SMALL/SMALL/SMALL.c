@@ -43,12 +43,12 @@
 unsigned int line;
 
 /* Taken from CAT-644 VGA routines and hacked up a bit */
-void ntsc_init()
+inline void ntsc_init()
 {
 	TIMSK1=_BV(OCIE1A);
 	TCCR1B = (1<<CS10)  | (1<<WGM12 );
-	TCNT1 = 0x00; //zero timer count
-	line = 0;
+//	TCNT1 = 0x00; //zero timer count
+//	line = 0;
 	OCR1A =LINE_CLOCKS;   
 	NTSC_DDR |= NTSC_DDR_MASK;
 	sei();
@@ -111,12 +111,14 @@ static inline void wait_until(unsigned char time) {
 #define INVALID 254
 #define ERASED	253
 
-unsigned char mushrooms[]={20,46,77,ERASED,ERASED,ERASED,ENDOFLINE};
+unsigned char mushrooms[]={30,50,100,ERASED,ERASED,ERASED,ERASED,ERASED,ERASED,ERASED,ENDOFLINE};
+//unsigned char mushrooms[20];	
+	
 //unsigned int* mushpos=&mushrooms[0];
 
+unsigned char bugs[]={0,1,2,3,4,5,6,7,ENDOFLINE,ENDOFLINE};
 
-unsigned char bugs[]={0,1,2,3,4,5,ENDOFLINE,ENDOFLINE,ENDOFLINE,ENDOFLINE};
-	
+//	unsigned char bugs[20];
 	
 	//,2,3,4,5,6,7,8,9,10,11,12,13,14,21,22,23,ENDOFLINE};
 //unsigned int* bugpos=&bugs[0];
@@ -159,9 +161,9 @@ unsigned char bugpxp[]={
   
 volatile unsigned char sprite;
 
-unsigned char playerx=0;
-unsigned char bulletx=10;
-unsigned char bullety=160;
+unsigned char playerx;
+unsigned char bulletx;
+unsigned char bullety;
 
 ISR (TIM1_COMPA_vect ) {
 	unsigned char i;
@@ -204,7 +206,7 @@ ISR (TIM1_COMPA_vect ) {
 	wait_until(HSYNCSTART + (  ( U_SECOND_CLOCKS * (425+800L)  ) /100 )   );
 	if (line == bullety) {
 		
-		for (i=0;i< bulletx;i++) {  //delay
+		for (i=-5;i!= bulletx;i++) {  //delay
 			NTSC_PORT=NTSC_BLACK;
 		}
 		
@@ -213,9 +215,9 @@ ISR (TIM1_COMPA_vect ) {
 		NTSC_PORT=NTSC_WHITE;
 		NTSC_PORT=NTSC_WHITE;
 		NTSC_PORT=NTSC_BLACK;
-		
-		line++;
-		return;
+		goto end;
+		//line++;
+		//return;
 	}
 	
 	if (line == 262 +3 ) { /* we are on the 263nd line. 262 because 1st line is 0.  Then +3 because vsync lines are double speed*/
@@ -236,7 +238,7 @@ ISR (TIM1_COMPA_vect ) {
 	
 
 	
-	if ((line>64)&&(line <220))
+	if ((line>64)&&(line <224))
 	{
 		/*Active video lines */	
 		
@@ -308,6 +310,7 @@ ISR (TIM1_COMPA_vect ) {
 		
 	}
 	
+	end:
 	line++;
 
 }
@@ -333,6 +336,11 @@ void check(unsigned char* bugp)
 }
 */
 
+//port A.5
+#define FIRE  0b00100000     
+#define LEFT  0b00001000     
+#define RIGHT 0b00010000     
+
 void main(void)
 {
 	unsigned int i;
@@ -348,6 +356,7 @@ void main(void)
 	unsigned char insmush;
 	volatile unsigned char* bx = &bulletx;
 	volatile unsigned char* by = &bullety;
+//	volatile unsigned char* px = &playerx;
 
 /*	
 	DDRA=0b11000000;  //OCR0A pin output
@@ -366,19 +375,21 @@ void main(void)
 	OCR0B=128;   //  1/2
 */
 	
-	scrpos=0;
+	//scrpos=0;
 	ntsc_init();
-
+	
+	
+	
 	while(1){
 
 
-		bugp = bugs;
-		mushp = mushrooms;
+		//bugp = bugs;
+	//	mushp = mushrooms;
 				
 	//	_delay_ms(10);
 //__asm__ __volatile__ ( "nop");
-	for (i=55000;i;i++) {
-	   __asm__ __volatile__ ( "nop");
+	for (i=58000;i;i++) {
+	   __asm__ __volatile__ ( "");
 	}
 	//	__asm__ __volatile__ ( "nop");
 		
@@ -388,32 +399,57 @@ void main(void)
 	
 		//advance the player
 		
-		*((volatile char*)(&playerx)) += 1;  //force update to interrupt handler
+	//	*((volatile char*)(&playerx)) += 1;  //force update to interrupt handler
+		
+		if (! (PINA&LEFT))
+			playerx--;
+			//*((volatile char*)(&playerx)) -= 1;  //force update to interrupt handler
+		
+		if (! (PINA&RIGHT))
+			playerx++;
+		//	*((volatile char*)(&playerx)) += 1;  //force update to interrupt handler
+		
+		playerx&=31;
+	//	*((volatile char*)(&playerx)) &= 31;
 		
 	//	playerx++;
 		
-		if (playerx>36)
-			playerx=0;
+		//if (playerx>36)
+			//playerx=0;
 			
 		//advance the bullet
 
 		bulletpos = INVALID;
 	
 		
-		if (bullety<=64) {
+		if (bullety< 64  ) {
 			//refire bullet at player pos	
 			
 			//add read-port for firebutton here
-			bulletx=playerx;   
-			bullety=240;  
+			bulletx=playerx;  /* So bullet lines up with where the player was.  Determined by experimentation */
+			bullety=2; //off the screen
+			
+			if (!(PINA&FIRE))
+				bullety=240;  
 			
 		} else {
 			bullety-=2;  // very important we never interrupt ODD scanlines (every 7th line updates the sprite counters, and drawing the bullet suppresses a row of pixels)
 			bulletpos = (bullety - 64) / 8 * SCRCOLS + (bulletx/4); //turn bullet x/y into approximate screen position number
+			if (bulletx>20)
+				bulletpos++;
+	
+	/*
+			//For calibrtation purposes
+			mushrooms[0] = bulletpos % SCRCOLS;  //show the column we shoot in
+			mushrooms[1] = SCRCOLS;  //show the column we shoot in
+			mushrooms[2] = 2*SCRCOLS -1;
+		*/	
+	
 		}
 		
 		*bx=bulletx;
 		*by=bullety;
+		//*px=playerx;
 				
 				
 //enforce bug sort:
@@ -472,7 +508,7 @@ void main(void)
 					t=*bugp;
 					
 					if ( (*bugp)  == (*(bugp+1)))
-					t=INVALID;
+						t--; //on conflict move one bug back
 					
 					*bugp=*(bugp+1);
 					*(bugp+1) = t;
@@ -502,6 +538,7 @@ void main(void)
 				if (bulletpos == *mushp) {	
 					bullety=0;
 					*mushp = ERASED; //erase a mushroom if touched by bullet
+					
 				}
 				
 				//swap if we find out of order
@@ -510,6 +547,7 @@ void main(void)
 				if (*mushp==ERASED){
 					*mushp=insmush;
 					insmush = ERASED;
+					
 				}
 				
 				if ( *(mushp) > *(mushp+1) ) {
@@ -525,14 +563,15 @@ void main(void)
 			//check if bug shot
 				if (bulletpos == *bugp) {
 					bullety=0;
-					insmush = *bugp;  //set mushroom insert
+					insmush = bulletpos;  //set mushroom insert
 				//	*(mushp++)= *bugp;
 				//	*(mushp)= ENDOFLINE;
-					*bugp = ERASED; //erase a bug if touched by bullet
+					*bugp = 0; //when shot a new bug appears
 										
 				}
 	#endif
 				
+			
 			
 			
 		}
