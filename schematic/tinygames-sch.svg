@@ -1,0 +1,1877 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 744.09448819 1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="tinygames-sch.svg"
+   inkscape:export-filename="C:\Users\mark\Desktop\tinygames.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.1811 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09449 : 526.1811 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.7874 : 1"
+       id="perspective3574" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.249539"
+     inkscape:cx="418.32233"
+     inkscape:cy="421.11528"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="rect3549"
+       width="620.56256"
+       height="317.74207"
+       x="103.13451"
+       y="468.66476"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <ellipse
+       ry="7.3267856"
+       rx="4.2456431"
+       cy="680.12878"
+       cx="568.11426"
+       id="ellipse3440"
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.4950031"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.67013085"
+       id="rect3448"
+       width="14.109642"
+       height="4.299974"
+       x="559.29852"
+       y="678.29547"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <rect
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.22676674px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="rect3336"
+       width="72.399628"
+       height="39.45229"
+       x="204.32097"
+       y="501.17001"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:9.86991119px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="385.49268"
+       y="683.33154"
+       id="text3338"
+       sodipodi:linespacing="125%"
+       transform="scale(1.0517883,0.95076168)"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898"><tspan
+         sodipodi:role="line"
+         id="tspan3340"
+         x="385.49268"
+         y="683.33154">Attiny84</tspan></text>
+    <rect
+       y="584.45123"
+       x="353.39621"
+       height="117.04208"
+       width="109.70248"
+       id="rect3351"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.48078877px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:9.87054253px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="191.43381"
+       y="573.74335"
+       id="text3353"
+       sodipodi:linespacing="125%"
+       transform="scale(1.1129176,0.89853914)"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898"><tspan
+         sodipodi:role="line"
+         id="tspan3355"
+         x="191.43381"
+         y="573.74335">10.7Mhz</tspan><tspan
+         sodipodi:role="line"
+         x="191.43381"
+         y="586.08154"
+         id="tspan3357">osc</tspan></text>
+    <g
+       id="g3395"
+       transform="matrix(0.52063844,0,0,0.47062999,296.93399,277.95416)"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3365"
+         d="m 336.18334,825.52628 6.00358,6.00359 10.26929,-10.26929"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53670079px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3369"
+         d="m 352.6142,821.41857 9.63733,9.63732"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53670079px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3371"
+         d="m 362.23445,830.96623 9.41529,-9.4153 9.57222,9.57222"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53670079px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3373"
+         d="m 381.48349,831.4893 7.06146,-7.06147 13.96602,0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53670079px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3375"
+         d="m 336.49932,825.73551 -16.63368,0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53670079px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:9.59459686px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="453.01413"
+       y="694.54449"
+       id="text3377"
+       sodipodi:linespacing="125%"
+       transform="scale(1.0517883,0.95076169)"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898"><tspan
+         sodipodi:role="line"
+         id="tspan3379"
+         x="453.01413"
+         y="694.54449">470</tspan></text>
+    <g
+       id="g3402"
+       transform="matrix(0.52063844,0,0,0.47062999,296.93399,304.26295)"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898">
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53670079px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 336.18334,825.52628 6.00358,6.00359 10.26929,-10.26929"
+         id="path3404"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53670079px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 352.6142,821.41857 9.63733,9.63732"
+         id="path3406"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53670079px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 362.23445,830.96623 9.41529,-9.4153 9.57222,9.57222"
+         id="path3408"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53670079px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 381.48349,831.4893 7.06146,-7.06147 13.96602,0"
+         id="path3410"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53670079px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 336.49932,825.73551 -16.63368,0"
+         id="path3412"
+         inkscape:connector-curvature="0" />
+    </g>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3414"
+       y="722.21582"
+       x="453.01413"
+       style="font-style:normal;font-weight:normal;font-size:9.59459686px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"
+       transform="scale(1.0517883,0.95076169)"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898"><tspan
+         y="722.21582"
+         x="453.01413"
+         id="tspan3416"
+         sodipodi:role="line">1k</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.4950031px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 506.3259,666.28704 0,26.1075"
+       id="path3418"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.4950031px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 506.69617,679.84286 49.1873,0"
+       id="path3420"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <ellipse
+       style="fill:#000000"
+       id="path3422"
+       cx="506.33603"
+       cy="679.83398"
+       rx="1.2959712"
+       ry="1.1714903"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       sodipodi:type="star"
+       style="fill:#000000"
+       id="path3430"
+       sodipodi:sides="3"
+       sodipodi:cx="413.66501"
+       sodipodi:cy="866.28705"
+       sodipodi:r1="14.826702"
+       sodipodi:r2="7.4133511"
+       sodipodi:arg1="-2.6179939"
+       sodipodi:arg2="-1.5707963"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 400.82471,858.8737 12.8403,0 12.8403,0 -6.42015,11.12002 -6.42015,11.12003 -6.42015,-11.12003 z"
+       inkscape:transform-center-y="1.7444767"
+       transform="matrix(0.52063844,0,0,0.47062999,180.93022,306.95699)"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       inkscape:transform-center-y="1.7444769"
+       d="m 76.86126,572.71836 12.840301,0 12.840299,0 -6.420149,11.12003 -6.42015,11.12003 -6.42015,-11.12003 z"
+       inkscape:randomized="0"
+       inkscape:rounded="0"
+       inkscape:flatsided="false"
+       sodipodi:arg2="-1.5707963"
+       sodipodi:arg1="-2.6179939"
+       sodipodi:r2="7.4133511"
+       sodipodi:r1="14.826702"
+       sodipodi:cy="580.13171"
+       sodipodi:cx="89.701561"
+       sodipodi:sides="3"
+       id="path3432"
+       style="fill:#000000"
+       sodipodi:type="star"
+       transform="matrix(0.52063844,0,0,0.47062999,173.70582,283.06401)"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       inkscape:transform-center-y="1.7444768"
+       d="m 695.39706,712.71849 12.84031,-10e-6 12.8403,0 -6.42015,11.12003 -6.42015,11.12003 -6.42015,-11.12003 z"
+       inkscape:randomized="0"
+       inkscape:rounded="0"
+       inkscape:flatsided="false"
+       sodipodi:arg2="-1.5707963"
+       sodipodi:arg1="-2.6179939"
+       sodipodi:r2="7.4133511"
+       sodipodi:r1="14.826702"
+       sodipodi:cy="720.13184"
+       sodipodi:cx="708.23737"
+       sodipodi:sides="3"
+       id="path3434"
+       style="fill:#000000"
+       sodipodi:type="star"
+       transform="matrix(0.52063844,0,0,0.47062999,191.91414,368.47116)"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <ellipse
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.4950031"
+       id="path3442"
+       cx="573.66626"
+       cy="680.41089"
+       rx="1.3508865"
+       ry="2.0933673"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       id="ellipse3454-4"
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.4950031"
+       d="m 567.8394,687.57611 c -2.3448,0 -4.19318,-3.51744 -4.19318,-7.56391 0,-4.04647 1.90085,-7.32679 4.24565,-7.32679 m 0,0 -13.34615,-0.1794 c -2.3448,0 -4.24563,3.28031 -4.24563,7.32678 0,4.04648 1.84837,7.56391 4.19318,7.56391 l 13.34613,0.17941"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.4950031px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 560.79556,708.69117 0,-20.95774"
+       id="path3490"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.39794159px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="513.03448"
+       y="704.06042"
+       id="text3492"
+       sodipodi:linespacing="125%"
+       transform="scale(1.0517883,0.95076168)"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898"><tspan
+         sodipodi:role="line"
+         id="tspan3494"
+         x="513.03448"
+         y="704.06042">video out</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:6.5370059px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="454.73523"
+       y="735.57971"
+       id="text3496"
+       sodipodi:linespacing="125%"
+       transform="scale(1.0517883,0.95076169)"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898"><tspan
+         sodipodi:role="line"
+         id="tspan3498"
+         x="454.73523"
+         y="735.57971">Lum</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3500"
+       y="707.98102"
+       x="453.65994"
+       style="font-style:normal;font-weight:normal;font-size:6.5370059px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"
+       transform="scale(1.0517883,0.95076169)"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898"><tspan
+         y="707.98102"
+         x="453.65994"
+         id="tspan3502"
+         sodipodi:role="line">Sync</tspan></text>
+    <g
+       id="g3402-3"
+       transform="matrix(0,0.47062999,-0.52063844,0,697.04811,468.04257)"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898">
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53670079px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 336.18334,825.52628 6.00358,6.00359 10.26929,-10.26929"
+         id="path3404-6"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53670079px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 352.6142,821.41857 9.63733,9.63732"
+         id="path3406-2"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53670079px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 362.23445,830.96623 9.41529,-9.4153 9.57222,9.57222"
+         id="path3408-7"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53670079px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 381.48349,831.4893 7.06146,-7.06147 13.96602,0"
+         id="path3410-6"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53670079px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 336.49932,825.73551 -16.63368,0"
+         id="path3412-5"
+         inkscape:connector-curvature="0" />
+    </g>
+    <rect
+       transform="matrix(1,0,-0.62212028,0.78292168,0,0)"
+       y="834.32483"
+       x="687.87079"
+       height="23.55118"
+       width="30.971609"
+       id="rect3592"
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.97783816"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.97783816"
+       id="rect3590"
+       width="30.971609"
+       height="23.55118"
+       x="681.12579"
+       y="823.48291"
+       transform="matrix(1,0,-0.62212028,0.78292168,0,0)"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.86521918"
+       id="rect3594"
+       width="30.333015"
+       height="8.6047392"
+       x="154.15076"
+       y="662.854"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.01284337"
+       id="rect3596"
+       width="23.141996"
+       height="8.9305286"
+       x="284.75906"
+       y="879.43201"
+       transform="matrix(0.64896055,-0.76082206,0,1,0,0)"
+       inkscape:transform-center-x="0.85007308"
+       inkscape:transform-center-y="-10.424898"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <ellipse
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.93127424"
+       id="path3602"
+       cx="548.8725"
+       cy="750.54333"
+       rx="2.394712"
+       ry="2.6702008"
+       transform="matrix(1,0,-0.50491107,0.86317137,0,0)"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <ellipse
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.51169384"
+       id="path3627"
+       cx="178.09418"
+       cy="654.23096"
+       rx="10.369752"
+       ry="5.20544"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       id="path3622"
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.72058493"
+       d="m 180.23012,637.32321 -5.52013,0.81054 -0.2038,14.47811 c 0.0408,1.41628 1.37993,2.50577 3.03188,2.50577 1.65196,0 3.23568,-0.94212 3.23568,-2.28607 l 0.10846,-15.06624"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cscccc"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.61601347"
+       d="m 180.74724,637.80481 a 3.046126,1.7463019 0 0 1 -3.04613,1.74631 3.046126,1.7463019 0 0 1 -3.04612,-1.74631 3.046126,1.7463019 0 0 1 3.04612,-1.74629 3.046126,1.7463019 0 0 1 3.04613,1.74629 z"
+       id="rect3614"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:9.3594532px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="208.93561"
+       y="686.50592"
+       id="text3629"
+       sodipodi:linespacing="125%"
+       transform="scale(1.0247928,0.97580699)"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898"><tspan
+         sodipodi:role="line"
+         id="tspan3631"
+         x="208.93561"
+         y="686.50592">Fire</tspan><tspan
+         sodipodi:role="line"
+         x="208.93561"
+         y="698.20526"
+         id="tspan3633">Left</tspan><tspan
+         sodipodi:role="line"
+         x="208.93561"
+         y="709.90454"
+         id="tspan3635">Right</tspan><tspan
+         sodipodi:role="line"
+         x="208.93561"
+         y="721.60388"
+         id="tspan3637">Ground</tspan></text>
+    <path
+       sodipodi:type="star"
+       style="fill:none"
+       id="path3639"
+       sodipodi:sides="3"
+       sodipodi:cx="459.5737"
+       sodipodi:cy="544.60455"
+       sodipodi:r1="14.826702"
+       sodipodi:r2="7.4133511"
+       sodipodi:arg1="-2.6179939"
+       sodipodi:arg2="-1.5707963"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 446.7334,537.1912 12.8403,0 12.8403,0 -6.42015,11.12003 -6.42015,11.12003 -6.42015,-11.12003 z"
+       inkscape:transform-center-y="1.7444769"
+       transform="matrix(0.52063844,0,0,0.47062999,24.864991,463.01845)"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3641"
+       d="m 264.28254,720.63005 0,-20.95774"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.4950031px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.4950031px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 264.52993,699.9379 -13.88712,0"
+       id="path3643"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.4950031px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 248.40295,689.00443 104.37744,0"
+       id="path3645"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3647"
+       d="m 248.40295,677.70931 104.37744,0"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.4950031px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.4950031px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 248.40295,666.41419 104.37744,0"
+       id="path3649"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <g
+       transform="matrix(0,0.47062999,-0.52063844,0,718.91492,468.04257)"
+       id="g3651"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3653"
+         d="m 336.18334,825.52628 6.00358,6.00359 10.26929,-10.26929"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53670079px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3655"
+         d="m 352.6142,821.41857 9.63733,9.63732"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53670079px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3657"
+         d="m 362.23445,830.96623 9.41529,-9.4153 9.57222,9.57222"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53670079px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3659"
+         d="m 381.48349,831.4893 7.06146,-7.06147 13.96602,0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53670079px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3661"
+         d="m 336.49932,825.73551 -16.63368,0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53670079px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <g
+       id="g3663"
+       transform="matrix(0,0.47062999,-0.52063844,0,740.78173,468.04257)"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898">
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53670079px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 336.18334,825.52628 6.00358,6.00359 10.26929,-10.26929"
+         id="path3665"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53670079px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 352.6142,821.41857 9.63733,9.63732"
+         id="path3667"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53670079px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 362.23445,830.96623 9.41529,-9.4153 9.57222,9.57222"
+         id="path3669"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53670079px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 381.48349,831.4893 7.06146,-7.06147 13.96602,0"
+         id="path3671"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53670079px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 336.49932,825.73551 -16.63368,0"
+         id="path3673"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="g3691"
+       transform="matrix(0.52063844,0,0,0.47062999,216.59694,235.0679)"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898">
+      <path
+         sodipodi:nodetypes="ccc"
+         inkscape:connector-curvature="0"
+         id="path3675"
+         d="m 123.90163,803.69853 14.62727,-16.34813 16.34813,16.34813"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <text
+         transform="scale(1.0273848,0.97334513)"
+         sodipodi:linespacing="125%"
+         id="text3677"
+         y="799.44055"
+         x="121.80878"
+         style="font-style:normal;font-weight:normal;font-size:23.25295448px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="799.44055"
+           x="121.80878"
+           id="tspan3679"
+           sodipodi:role="line">5v</tspan></text>
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 123.90163,803.69853 14.62727,-16.34813 16.34813,16.34813"
+         id="path3683"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccc" />
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.72702914px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 139.38933,786.48997 0,31.83583"
+         id="path3689"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="g3698"
+       transform="matrix(0.52063844,0,0,0.47062999,194.64632,235.0679)"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898">
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 123.90163,803.69853 14.62727,-16.34813 16.34813,16.34813"
+         id="path3700"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccc" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:23.25295448px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="121.80878"
+         y="799.44055"
+         id="text3702"
+         sodipodi:linespacing="125%"
+         transform="scale(1.0273848,0.97334513)"><tspan
+           sodipodi:role="line"
+           id="tspan3704"
+           x="121.80878"
+           y="799.44055">5v</tspan></text>
+      <path
+         sodipodi:nodetypes="ccc"
+         inkscape:connector-curvature="0"
+         id="path3706"
+         d="m 123.90163,803.69853 14.62727,-16.34813 16.34813,16.34813"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3708"
+         d="m 139.38933,786.48997 0,31.83583"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.72702914px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <g
+       transform="matrix(0.52063844,0,0,0.47062999,238.12273,236.60927)"
+       id="g3710"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898">
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 123.90163,803.69853 14.62727,-16.34813 16.34813,16.34813"
+         id="path3712"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccc" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:23.25295448px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="121.80878"
+         y="799.44055"
+         id="text3714"
+         sodipodi:linespacing="125%"
+         transform="scale(1.0273848,0.97334513)"><tspan
+           sodipodi:role="line"
+           id="tspan3716"
+           x="121.80878"
+           y="799.44055">5v</tspan></text>
+      <path
+         sodipodi:nodetypes="ccc"
+         inkscape:connector-curvature="0"
+         id="path3718"
+         d="m 123.90163,803.69853 14.62727,-16.34813 16.34813,16.34813"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3720"
+         d="m 139.38933,786.48997 0,31.83583"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.72702914px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.4950031px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 267.67867,657.26236 0,8.7858"
+       id="path3722"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.4950031px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 289.50461,657.26236 0,20.65434"
+       id="path3724"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.4950031px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 311.33056,657.10822 0,32.21461"
+       id="path3726"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <ellipse
+       style="fill:#000000;stroke:#000000;stroke-width:0.4950031"
+       id="path3728"
+       cx="267.59341"
+       cy="666.12524"
+       rx="0.59680331"
+       ry="0.53947902"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <ellipse
+       cy="677.53137"
+       cx="289.24884"
+       id="circle3730"
+       style="fill:#000000;stroke:#000000;stroke-width:0.4950031"
+       rx="0.59680331"
+       ry="0.53947902"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <ellipse
+       style="fill:#000000;stroke:#000000;stroke-width:0.4950031"
+       id="circle3732"
+       cx="311.2453"
+       cy="688.9375"
+       rx="0.59680331"
+       ry="0.53947902"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 220.68643,556.77346 0,-15.98673"
+       id="path3734"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3736"
+       d="m 396.33025,716.21656 0,-60.35881"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <text
+       transform="scale(1.0247928,0.97580701)"
+       sodipodi:linespacing="125%"
+       id="text3738"
+       y="615.63129"
+       x="520.93494"
+       style="font-style:normal;font-weight:normal;font-size:9.3594532px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898"><tspan
+         id="tspan3746"
+         y="615.63129"
+         x="520.93494"
+         sodipodi:role="line">RESET</tspan><tspan
+         y="627.33063"
+         x="520.93494"
+         sodipodi:role="line"
+         id="tspan3800">MISO</tspan><tspan
+         y="639.02991"
+         x="520.93494"
+         sodipodi:role="line"
+         id="tspan3754">MOSI</tspan><tspan
+         y="650.72925"
+         x="520.93494"
+         sodipodi:role="line"
+         id="tspan3756">SCLK</tspan><tspan
+         y="662.42853"
+         x="520.93494"
+         sodipodi:role="line"
+         id="tspan3758" /></text>
+    <g
+       transform="matrix(0.52063844,0,0,0.47062999,323.63942,199.54427)"
+       id="g3760"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898">
+      <path
+         sodipodi:nodetypes="ccc"
+         inkscape:connector-curvature="0"
+         id="path3762"
+         d="m 123.90163,803.69853 14.62727,-16.34813 16.34813,16.34813"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <text
+         transform="scale(1.0273848,0.97334513)"
+         sodipodi:linespacing="125%"
+         id="text3764"
+         y="799.44055"
+         x="121.80878"
+         style="font-style:normal;font-weight:normal;font-size:23.25295448px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="799.44055"
+           x="121.80878"
+           id="tspan3766"
+           sodipodi:role="line">5v</tspan></text>
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 123.90163,803.69853 14.62727,-16.34813 16.34813,16.34813"
+         id="path3768"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccc" />
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.72702914px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 139.38933,786.48997 0,31.83583"
+         id="path3770"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       transform="matrix(0,0.47062999,-0.52063844,0,933.37372,398.1875)"
+       id="g3772"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3774"
+         d="m 336.18334,825.52628 6.00358,6.00359 10.26929,-10.26929"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53670079px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3776"
+         d="m 352.6142,821.41857 9.63733,9.63732"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53670079px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3778"
+         d="m 362.23445,830.96623 9.41529,-9.4153 9.57222,9.57222"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53670079px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3780"
+         d="m 381.48349,831.4893 7.06146,-7.06147 13.96602,0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53670079px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3782"
+         d="m 336.49932,825.73551 -16.63368,0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.53670079px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <g
+       transform="matrix(0.52063844,0,0,0.47062999,430.97195,165.21283)"
+       id="g3784"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898">
+      <path
+         sodipodi:nodetypes="ccc"
+         inkscape:connector-curvature="0"
+         id="path3786"
+         d="m 123.90163,803.69853 14.62727,-16.34813 16.34813,16.34813"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <text
+         transform="scale(1.0273848,0.97334513)"
+         sodipodi:linespacing="125%"
+         id="text3788"
+         y="799.44055"
+         x="121.80878"
+         style="font-style:normal;font-weight:normal;font-size:23.25295448px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="799.44055"
+           x="121.80878"
+           id="tspan3790"
+           sodipodi:role="line">5v</tspan></text>
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 123.90163,803.69853 14.62727,-16.34813 16.34813,16.34813"
+         id="path3792"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccc" />
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.72702914px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 139.38933,786.48997 0,31.83583"
+         id="path3794"
+         inkscape:connector-curvature="0" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path3796"
+       d="m 504.0043,587.40729 0,8.7858"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.4950031px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <ellipse
+       ry="0.53947902"
+       rx="0.59680331"
+       cy="596.27014"
+       cx="503.91901"
+       id="ellipse3798"
+       style="fill:#000000;stroke:#000000;stroke-width:0.4950031"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3802"
+       d="m 462.8337,619.49689 67.19091,0"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.4950031px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.4950031px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 462.8337,608.20177 66.84337,0"
+       id="path3804"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3806"
+       d="m 462.8337,596.90665 67.53845,0"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.4950031px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       sodipodi:nodetypes="cc"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.4950031px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 462.8337,631.49689 67.19091,0"
+       id="path3808"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <g
+       id="g3810"
+       transform="matrix(0.52063844,0,0,0.47062999,146.33859,116.21001)"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898">
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 123.90163,803.69853 14.62727,-16.34813 16.34813,16.34813"
+         id="path3812"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccc" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:23.25295448px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="121.80878"
+         y="799.44055"
+         id="text3814"
+         sodipodi:linespacing="125%"
+         transform="scale(1.0273848,0.97334513)"><tspan
+           sodipodi:role="line"
+           id="tspan3816"
+           x="121.80878"
+           y="799.44055">5v</tspan></text>
+      <path
+         sodipodi:nodetypes="ccc"
+         inkscape:connector-curvature="0"
+         id="path3818"
+         d="m 123.90163,803.69853 14.62727,-16.34813 16.34813,16.34813"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3820"
+         d="m 139.38933,786.48997 0,31.83583"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.72702914px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:7.83537579px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="247.51527"
+       y="536.72418"
+       id="text3822"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898"><tspan
+         sodipodi:role="line"
+         id="tspan3824"
+         x="247.51527"
+         y="536.72418">CKOUT</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 276.98754,534.53105 91.05487,0 0,49.35035"
+       id="path3826"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 389.68928,641.92589 13.20643,0"
+       id="path3828"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 390.73189,646.2668 c 0,0 3.48843,-2.75563 5.5606,-2.7803 2.1764,-0.0259 5.90815,2.7803 5.90815,2.7803"
+       id="path3830"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csc"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 396.29249,644.35866 0,12.16382"
+       id="path3832"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 395.94496,640.88328 0,-56.40859"
+       id="path3834"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.20007324px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="375.01779"
+       y="646.28436"
+       id="text3838"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898"><tspan
+         sodipodi:role="line"
+         id="tspan3840"
+         x="375.01779"
+         y="646.28436">.1u</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.80305856px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 373.90987,644.88392 -0.0667,2.14427"
+       id="path3842"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:16.39803696px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="576.89893"
+       y="618.56543"
+       id="text3844"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898"><tspan
+         sodipodi:role="line"
+         id="tspan3846"
+         x="576.89893"
+         y="618.56543">Programmer</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:30.28294373px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="988.08411"
+       y="361.25366"
+       id="text3848"
+       sodipodi:linespacing="125%"
+       transform="scale(0.57334498,1.7441506)"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898"><tspan
+         sodipodi:role="line"
+         id="tspan3850"
+         x="988.08411"
+         y="361.25366">}</tspan></text>
+    <rect
+       style="fill:#000000;stroke:#000000;stroke-width:0.54837501"
+       id="rect3852"
+       width="37.478848"
+       height="23.657146"
+       x="602.72015"
+       y="681.80103"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.48397872"
+       id="rect3854"
+       width="20.991358"
+       height="14.315386"
+       x="607.41895"
+       y="686.89941"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.5476141px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 642.18864,658.08457 -18.92385,20.80756 -14.74947,-20.23749"
+       id="path3856"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       sodipodi:type="star"
+       style="fill:none;stroke:#000000"
+       id="path3860"
+       sodipodi:sides="3"
+       sodipodi:cx="330.1868"
+       sodipodi:cy="761.77722"
+       sodipodi:r1="3.7087398"
+       sodipodi:r2="1.8543698"
+       sodipodi:arg1="0.5880026"
+       sodipodi:arg2="1.6352002"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 333.27266,763.83446 -3.20521,-0.20671 -3.2052,-0.20672 1.78162,-2.67243 1.78162,-2.67243 1.42358,2.87915 z"
+       inkscape:transform-center-x="0.077943605"
+       inkscape:transform-center-y="-0.41456179"
+       transform="matrix(0.65289467,0,0,0.50437641,403.92907,305.90035)"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       sodipodi:type="star"
+       style="fill:none;stroke:#000000"
+       id="path3862"
+       sodipodi:sides="3"
+       sodipodi:cx="343.55884"
+       sodipodi:cy="759.72003"
+       sodipodi:r1="16.980009"
+       sodipodi:r2="8.4900045"
+       sodipodi:arg1="-2.5283853"
+       sodipodi:arg2="-1.4811878"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 329.67248,749.94815 14.64612,1.31594 14.64612,1.31594 -8.4627,12.02594 -8.4627,12.02594 -6.18342,-13.34188 z"
+       inkscape:transform-center-x="-0.49601903"
+       inkscape:transform-center-y="1.8006119"
+       transform="matrix(0.65289467,0,0,0.50437641,403.92907,305.90035)"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       sodipodi:type="star"
+       style="fill:none;stroke:#000000"
+       id="path3866"
+       sodipodi:sides="3"
+       sodipodi:cx="323.50079"
+       sodipodi:cy="763.32019"
+       sodipodi:r1="2.5715482"
+       sodipodi:r2="1.2857741"
+       sodipodi:arg1="0.64350111"
+       sodipodi:arg2="1.6906987"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 325.55803,764.86312 -2.21103,-0.26639 -2.21104,-0.26638 1.33621,-1.78162 1.33622,-1.78162 0.87482,2.048 z"
+       inkscape:transform-center-x="0.10043696"
+       inkscape:transform-center-y="-0.25476133"
+       transform="matrix(0.65289467,0,0,0.50437641,403.92907,305.90035)"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       sodipodi:type="star"
+       style="fill:none;stroke:#000000"
+       id="path3868"
+       sodipodi:sides="3"
+       sodipodi:cx="323.50079"
+       sodipodi:cy="772.06342"
+       sodipodi:r1="2.5715482"
+       sodipodi:r2="1.2857741"
+       sodipodi:arg1="1.5707963"
+       sodipodi:arg2="2.6179939"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 323.50079,774.63496 -1.11351,-1.92866 -1.11351,-1.92866 2.22702,0 2.22703,0 -1.11351,1.92866 z"
+       inkscape:transform-center-y="0.32424516"
+       transform="matrix(0.65289467,0,0,0.50437641,403.92907,305.90035)"
+       inkscape:transform-center-x="2.2937013e-005"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       sodipodi:type="star"
+       style="fill:none;stroke:#000000"
+       id="path3870"
+       sodipodi:sides="3"
+       sodipodi:cx="327.61526"
+       sodipodi:cy="778.23517"
+       sodipodi:r1="8.0337734"
+       sodipodi:r2="4.0168867"
+       sodipodi:arg1="-2.4468544"
+       sodipodi:arg2="-1.3996568"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 321.44355,773.09207 6.85581,1.18489 6.85581,1.18489 -4.45405,5.34487 -4.45405,5.34486 -2.40176,-6.52975 z"
+       inkscape:transform-center-x="-0.44662026"
+       inkscape:transform-center-y="0.69938521"
+       transform="matrix(0.65289467,0,0,0.50437641,403.92907,305.90035)"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       sodipodi:type="star"
+       style="fill:none;stroke:#000000"
+       id="path3872"
+       sodipodi:sides="3"
+       sodipodi:cx="314.75751"
+       sodipodi:cy="770.00623"
+       sodipodi:r1="7.1450181"
+       sodipodi:r2="11.845144"
+       sodipodi:arg1="-2.6135182"
+       sodipodi:arg2="0.0023380356"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 308.58579,766.40606 18.01683,3.62786 -5.64142,-3.57247 -12.15023,13.7891 5.91456,-3.09938 -5.86659,-17.41696 z"
+       inkscape:transform-center-x="-0.010416694"
+       inkscape:transform-center-y="0.89393961"
+       transform="matrix(0.65289467,0,0,0.50437641,403.92907,305.90035)"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       sodipodi:type="star"
+       style="fill:none;stroke:#000000"
+       id="path3874"
+       sodipodi:sides="3"
+       sodipodi:cx="332.24405"
+       sodipodi:cy="758.69141"
+       sodipodi:r1="5.6807361"
+       sodipodi:r2="2.8403678"
+       sodipodi:arg1="3.0509328"
+       sodipodi:arg2="4.0981303"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 326.58664,759.20572 8.04071,-5.67093 0.89081,9.79892 z"
+       inkscape:transform-center-x="0.77804465"
+       inkscape:transform-center-y="-0.12971455"
+       transform="matrix(0.65289467,0,0,0.50437641,403.92907,305.90035)"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       sodipodi:type="star"
+       style="fill:none;stroke:#000000"
+       id="path3876"
+       sodipodi:sides="3"
+       sodipodi:cx="322.98648"
+       sodipodi:cy="760.74866"
+       sodipodi:r1="13.411555"
+       sodipodi:r2="6.7057776"
+       sodipodi:arg1="0.56672922"
+       sodipodi:arg2="1.6139268"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="M 334.30129,767.94899 311.0934,766.9474 323.56475,747.34957 Z"
+       inkscape:transform-center-x="0.18879663"
+       inkscape:transform-center-y="-1.5632627"
+       transform="matrix(0.65289467,0,0,0.50437641,403.92907,305.90035)"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       sodipodi:type="star"
+       style="fill:none;stroke:#000000"
+       id="path3878"
+       sodipodi:sides="3"
+       sodipodi:cx="338.93008"
+       sodipodi:cy="773.09204"
+       sodipodi:r1="18.699947"
+       sodipodi:r2="8.0707293"
+       sodipodi:arg1="-2.5917395"
+       sodipodi:arg2="-1.5445419"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 322.98649,763.32016 32.37809,0.85026 -16.92539,27.61512 z"
+       inkscape:transform-center-x="-0.059815191"
+       inkscape:transform-center-y="1.995166"
+       transform="matrix(0.65289467,0,0,0.50437641,403.92907,305.90035)"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       sodipodi:type="star"
+       style="fill:none;stroke:#000000"
+       id="path3880"
+       sodipodi:sides="3"
+       sodipodi:cx="319.9006"
+       sodipodi:cy="765.37744"
+       sodipodi:r1="2.7696424"
+       sodipodi:r2="1.3848211"
+       sodipodi:arg1="1.1902899"
+       sodipodi:arg2="2.2374875"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 320.92922,767.94899 -3.76995,-2.96651 4.45405,-1.78162 z"
+       inkscape:transform-center-x="0.33581281"
+       inkscape:transform-center-y="0.099593353"
+       transform="matrix(0.65289467,0,0,0.50437641,403.92907,305.90035)"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       sodipodi:type="star"
+       style="fill:none;stroke:#000000"
+       id="path3882"
+       sodipodi:sides="3"
+       sodipodi:cx="313.21457"
+       sodipodi:cy="775.14929"
+       sodipodi:r1="8.9820318"
+       sodipodi:r2="4.4910159"
+       sodipodi:arg1="0.23109067"
+       sodipodi:arg2="1.2782882"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 321.95783,777.20653 -14.89651,4.48603 3.56324,-15.14378 z"
+       inkscape:transform-center-x="-0.8454798"
+       inkscape:transform-center-y="-0.51882327"
+       transform="matrix(0.65289467,0,0,0.50437641,403.92907,305.90035)"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       sodipodi:type="star"
+       style="fill:none;stroke:#000000"
+       id="path3884"
+       sodipodi:sides="3"
+       sodipodi:cx="320.92923"
+       sodipodi:cy="766.40601"
+       sodipodi:r1="2.7696424"
+       sodipodi:r2="1.3848211"
+       sodipodi:arg1="1.9513027"
+       sodipodi:arg2="2.9985003"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 319.90061,768.97755 -0.6841,-4.74813 4.45406,1.78162 z"
+       inkscape:transform-center-x="-0.33576722"
+       inkscape:transform-center-y="0.099593349"
+       transform="matrix(0.65289467,0,0,0.50437641,403.92907,305.90035)"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       sodipodi:type="star"
+       style="fill:none;stroke:#000000"
+       id="path3886"
+       sodipodi:sides="3"
+       sodipodi:cx="329.67249"
+       sodipodi:cy="767.43463"
+       sodipodi:r1="4.6572719"
+       sodipodi:r2="2.3286359"
+       sodipodi:arg1="0.11065722"
+       sodipodi:arg2="1.1578548"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 334.30127,767.94894 -7.38858,3.23718 0.89081,-8.01729 z"
+       inkscape:transform-center-x="-0.61010298"
+       inkscape:transform-center-y="-0.12971468"
+       transform="matrix(0.65289467,0,0,0.50437641,403.92907,305.90035)"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       sodipodi:type="star"
+       style="fill:none;stroke:#000000"
+       id="path3888"
+       sodipodi:sides="3"
+       sodipodi:cx="347.15903"
+       sodipodi:cy="781.83533"
+       sodipodi:r1="2.998915"
+       sodipodi:r2="1.4994574"
+       sodipodi:arg1="2.6011732"
+       sodipodi:arg2="3.6483707"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 344.58748,783.37826 2.52111,-4.54142 2.67243,4.45405 z"
+       inkscape:transform-center-x="-0.016442443"
+       inkscape:transform-center-y="-0.36708752"
+       transform="matrix(0.65289467,0,0,0.50437641,403.92907,305.90035)"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       sodipodi:type="star"
+       style="fill:none;stroke:#000000"
+       id="path3890"
+       sodipodi:sides="3"
+       sodipodi:cx="338.41577"
+       sodipodi:cy="776.6922"
+       sodipodi:r1="3.2931886"
+       sodipodi:r2="1.6465943"
+       sodipodi:arg1="-2.2455373"
+       sodipodi:arg2="-1.1983397"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 336.35853,774.12065 5.31289,2.0757 -4.45406,3.56324 z"
+       inkscape:transform-center-x="-0.39119307"
+       inkscape:transform-center-y="0.12503474"
+       transform="matrix(0.65289467,0,0,0.50437641,403.92907,305.90035)"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       sodipodi:type="star"
+       style="fill:none;stroke:#000000"
+       id="path3892"
+       sodipodi:sides="3"
+       sodipodi:cx="329.15817"
+       sodipodi:cy="769.49188"
+       sodipodi:r1="9.2718496"
+       sodipodi:r2="4.6359248"
+       sodipodi:arg1="0.5880026"
+       sodipodi:arg2="1.6352002"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 336.87282,774.63498 -16.02602,-1.03357 8.9081,-13.36215 z"
+       inkscape:transform-center-x="0.19482408"
+       inkscape:transform-center-y="-1.036387"
+       transform="matrix(0.65289467,0,0,0.50437641,403.92907,305.90035)"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <ellipse
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.83629745"
+       id="path3896"
+       cx="634.61053"
+       cy="697.68915"
+       rx="3.6559849"
+       ry="3.2258689"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <ellipse
+       ry="3.2258689"
+       rx="3.6559849"
+       cy="689.32617"
+       cx="634.61053"
+       id="ellipse3910"
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.83629745"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.83629745px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 633.49223,690.52528 2.27497,-2.52774"
+       id="path3912"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.83629745px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 633.99778,696.33909 1.0111,2.78052"
+       id="path3914"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.83629745px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 603.66487,681.42541 7.836,-5.05548 33.61898,0 -5.56104,5.56103"
+       id="path3916"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.83629745px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 640.82268,704.93342 5.30826,-6.57214 0,-21.99135"
+       id="path3918"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.83629745px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 646.38372,682.43651 5.05548,2.78052 0,6.06657 -5.05548,4.29717"
+       id="path3920"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <path
+       transform="matrix(0.52063844,0,0,0.47062999,-104.29478,382.97935)"
+       sodipodi:type="star"
+       style="fill:#000000"
+       id="path3936"
+       sodipodi:sides="3"
+       sodipodi:cx="708.23737"
+       sodipodi:cy="720.13184"
+       sodipodi:r1="14.826702"
+       sodipodi:r2="7.4133511"
+       sodipodi:arg1="-2.6179939"
+       sodipodi:arg2="-1.5707963"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 695.39706,712.71849 12.84031,-10e-6 12.8403,0 -6.42015,11.12003 -6.42015,11.12003 -6.42015,-11.12003 z"
+       inkscape:transform-center-y="1.7444768"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.61795616px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="430.71371"
+       y="547.53064"
+       id="text3938"
+       sodipodi:linespacing="125%"
+       transform="scale(0.92480349,1.0813108)"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898"><tspan
+         sodipodi:role="line"
+         id="tspan3940"
+         x="430.71371"
+         y="547.53064">1</tspan></text>
+    <text
+       transform="scale(0.92480349,1.0813108)"
+       sodipodi:linespacing="125%"
+       id="text3942"
+       y="645.68213"
+       x="415.27792"
+       style="font-style:normal;font-weight:normal;font-size:8.61795616px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898"><tspan
+         y="645.68213"
+         x="415.27792"
+         id="tspan3944"
+         sodipodi:role="line">14</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.61795616px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="475.27039"
+       y="643.38617"
+       id="text3946"
+       sodipodi:linespacing="125%"
+       transform="scale(0.92480349,1.0813108)"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898"><tspan
+         sodipodi:role="line"
+         id="tspan3948"
+         x="475.27039"
+         y="643.38617">(A2)    </tspan></text>
+    <text
+       transform="scale(0.92480349,1.0813108)"
+       sodipodi:linespacing="125%"
+       id="text3950"
+       y="619.27881"
+       x="475.27148"
+       style="font-style:normal;font-weight:normal;font-size:8.61795616px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898"><tspan
+         y="619.27881"
+         x="475.27148"
+         id="tspan3952"
+         sodipodi:role="line">(A7)  </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.61795616px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="491.71399"
+       y="586.27466"
+       id="text3954"
+       sodipodi:linespacing="125%"
+       transform="scale(0.92480349,1.0813108)"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898"><tspan
+         sodipodi:role="line"
+         id="tspan3956"
+         x="491.71399"
+         y="586.27466">9*</tspan></text>
+    <text
+       transform="scale(0.92480349,1.0813108)"
+       sodipodi:linespacing="125%"
+       id="text3958"
+       y="574.79498"
+       x="492.04956"
+       style="font-style:normal;font-weight:normal;font-size:8.61795616px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898"><tspan
+         y="574.79498"
+         x="492.04956"
+         id="tspan3960"
+         sodipodi:role="line">7</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.61795616px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="492.04956"
+       y="563.88928"
+       id="text3962"
+       sodipodi:linespacing="125%"
+       transform="scale(0.92480349,1.0813108)"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898"><tspan
+         sodipodi:role="line"
+         id="tspan3964"
+         x="492.04956"
+         y="563.88928">8*</tspan></text>
+    <text
+       transform="scale(0.92480349,1.0813108)"
+       sodipodi:linespacing="125%"
+       id="text3966"
+       y="553.55756"
+       x="492.04956"
+       style="font-style:normal;font-weight:normal;font-size:8.61795616px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898"><tspan
+         y="553.55756"
+         x="492.04956"
+         id="tspan3968"
+         sodipodi:role="line">4</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.61795616px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="385.34109"
+       y="617.84387"
+       id="text3970"
+       sodipodi:linespacing="125%"
+       transform="scale(0.92480349,1.0813108)"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898"><tspan
+         sodipodi:role="line"
+         id="tspan3972"
+         x="385.34109"
+         y="617.84387">8* (A5)</tspan></text>
+    <text
+       transform="scale(0.92480349,1.0813108)"
+       sodipodi:linespacing="125%"
+       id="text3974"
+       y="628.46259"
+       x="385.34109"
+       style="font-style:normal;font-weight:normal;font-size:8.61795616px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898"><tspan
+         y="628.46259"
+         x="385.34109"
+         id="tspan3976"
+         sodipodi:role="line">10 (A3)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.61795616px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="385.34109"
+       y="638.50732"
+       id="text3978"
+       sodipodi:linespacing="125%"
+       transform="scale(0.92480349,1.0813108)"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898"><tspan
+         sodipodi:role="line"
+         id="tspan3980"
+         x="385.34109"
+         y="638.50732">9* (A4)</tspan></text>
+    <text
+       transform="scale(0.92480349,1.0813108)"
+       sodipodi:linespacing="125%"
+       id="text3982"
+       y="548.39166"
+       x="396.07904"
+       style="font-style:normal;font-weight:normal;font-size:8.61795616px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898"><tspan
+         y="548.39166"
+         x="396.07904"
+         id="tspan3984"
+         sodipodi:role="line">2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.25240088px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="357.30588"
+       y="697.99414"
+       id="text3986"
+       sodipodi:linespacing="125%"
+       transform="scale(0.94353101,1.0598486)"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898"><tspan
+         sodipodi:role="line"
+         id="tspan3988"
+         x="357.30588"
+         y="697.99414">*pins 8 and 9 have dual-function</tspan><tspan
+         sodipodi:role="line"
+         x="357.30588"
+         y="704.55963"
+         id="tspan3990">Don't mess with the joystick while programming!</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:9.63861275px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="387.26889"
+       y="844.83698"
+       id="text3551"
+       sodipodi:linespacing="125%"
+       transform="scale(1.1045928,0.905311)"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898"><tspan
+         sodipodi:role="line"
+         id="tspan3553"
+         x="387.26889"
+         y="844.83698">https://hackaday.io/project/18636-tinygames</tspan><tspan
+         sodipodi:role="line"
+         x="387.26889"
+         y="856.88525"
+         id="tspan3557">https://github.com/carangil/tinygames</tspan><tspan
+         sodipodi:role="line"
+         x="387.26889"
+         y="868.93353"
+         id="tspan3555" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:13.34769917px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="110.13899"
+       y="760.89087"
+       id="text3559"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898"><tspan
+         sodipodi:role="line"
+         id="tspan3561"
+         x="110.13899"
+         y="760.89087">Mark Sherman 2017</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:32.05084229px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="691.97302"
+       y="415.6521"
+       id="text3563"
+       sodipodi:linespacing="125%"
+       transform="scale(0.82781594,1.207998)"
+       inkscape:export-filename="C:\Users\mark\Desktop\tinygames-sch.png"
+       inkscape:export-xdpi="148.23898"
+       inkscape:export-ydpi="148.23898"><tspan
+         sodipodi:role="line"
+         id="tspan3565"
+         x="691.97302"
+         y="415.6521">Tinygames</tspan></text>
+  </g>
+</svg>
