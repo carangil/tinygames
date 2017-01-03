@@ -19,14 +19,14 @@ Copyright (c) 2016/2017 Mark W. Sherman, GPL v2 or higher
 
  *  All other code must be treated as GPL v2.
     (C) Mark W Sherman.  Contact me at m@mwsherman.com.
-        https://github.com/carangil/tinygames
-        https://hackaday.io/project/18636-tinygames
+    
+https://github.com/carangil/tinygames
+https://hackaday.io/project/18636-tinygames
 
 
 Copyright notice for 'wait_until' clipped from Arduino TVout library:
-
-         https://github.com/Avamander/arduino-tvout/
-
+        
+https://github.com/Avamander/arduino-tvout
 
 =====================================================================
 
