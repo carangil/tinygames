@@ -24,7 +24,10 @@ Copyright (c) 2016/2017 Mark W. Sherman, GPL v2 or higher
 
 
 Copyright notice for 'wait_until' clipped from Arduino TVout library:
-https://github.com/Avamander/arduino-tvout/
+
+         https://github.com/Avamander/arduino-tvout/
+
+
 =====================================================================
 
  Copyright (c) 2010 Myles Metzer
